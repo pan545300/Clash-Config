@@ -6,7 +6,11 @@ DOMAIN-SUFFIX,zifaner.com
 DOMAIN-SUFFIX,zifaner.org
 DOMAIN-SUFFIX,zifanr.xyz
 DOMAIN-SUFFIX,zifanr.net
+DOMAIN-SUFFIX,aiyaoyue.com
+DOMAIN-SUFFIX,yycloud.org
 DOMAIN-SUFFIX,sev7.org
+DOMAIN-KEYWORD,zifaner
+DOMAIN-KEYWORD,sev7en
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100

@@ -1,2 +1,2 @@
-# Clash-懒人配置
-mihomo内核客户端通用
+# Clash懒人配置
+(mihomo内核)clash客户端通用配置文件

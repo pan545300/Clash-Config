@@ -1,7 +1,12 @@
 # 代理补充列表
 
 # 域名后缀匹配
-DOMAIN-SUFFIX,qichiyu.com
+DOMAIN-SUFFIX,sev7en.blog
+DOMAIN-SUFFIX,zifaner.com
+DOMAIN-SUFFIX,zifaner.org
+DOMAIN-SUFFIX,zifanr.xyz
+DOMAIN-SUFFIX,zifanr.net
+DOMAIN-SUFFIX,sev7.org
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100

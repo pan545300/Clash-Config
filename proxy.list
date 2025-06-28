@@ -9,11 +9,12 @@ DOMAIN-SUFFIX,zifanr.net
 DOMAIN-SUFFIX,aiyaoyue.com
 DOMAIN-SUFFIX,yycloud.org
 DOMAIN-SUFFIX,sev7.org
-DOMAIN-KEYWORD,zifaner
-DOMAIN-KEYWORD,sev7en
+DOMAIN-SUFFIX,imfaner.com
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,1e100
+DOMAIN-KEYWORD,zifaner
+DOMAIN-KEYWORD,sev7en
 
 # 国外DNS
 DOMAIN-SUFFIX,dns.google

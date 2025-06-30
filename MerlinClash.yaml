@@ -4,7 +4,7 @@ proxies:
 proxy-providers:
   AP1:
     type: http
-    url: https://oooooooooooooooosQ?clash=1&flag=meta
+    url: https://oooooooooooooooosQ?clash=1&flag=meta  #修改你的机场1订阅地址
     interval: 86400
     health-check:
       enable: true
@@ -12,6 +12,16 @@ proxy-providers:
       interval: 300
     override:
       additional-prefix: "[AP1]"
+  AP2:
+    type: http
+    url: https://oooooooooooooooosQ?clash=1&flag=meta  #修改你的机场2订阅地址
+    interval: 86400
+    health-check:
+      enable: true
+      url: https://www.gstatic.com/generate_204
+      interval: 300
+    override:
+      additional-prefix: "[AP2]"     
 
 proxy-groups:
   - name: 🔃 自动选择

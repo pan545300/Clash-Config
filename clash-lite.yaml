@@ -150,6 +150,7 @@ rules:
   - RULE-SET,ai_cn_domain,🎯 直连
   - RULE-SET,apple_cn_domain,苹果
   - RULE-SET,proxylite,🚀 默认代理
+  - RULE-SET,anthropic_domain,ChatGPT
   - RULE-SET,ai,ChatGPT
   - RULE-SET,openai_domain,ChatGPT
   - RULE-SET,github_domain,GitHub
@@ -207,7 +208,8 @@ rule-providers:
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
   bank_cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-bank-cn.mrs" }
   xiaomi_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/xiaomi.mrs" }
-  proxylite: { <<: *class, url: "https://raw.githubusercontent.com/ifanrBook/ClashConfig/refs/heads/main/list/proxy.list"}
+  proxylite: { <<: *class, url: "https://raw.githubusercontent.com/sev7enshare/Clash-Config/refs/heads/main/list/proxy.list"}
+  anthropic_domain: { <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/anthropic.mrs" }
   ai: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs" }
   openai_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/openai.mrs" }
   ai_cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-ai-cn.mrs" }

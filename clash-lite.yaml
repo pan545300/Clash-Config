@@ -1,7 +1,7 @@
 # 机场订阅
 proxy-providers:
   Airport1:
-    url: "https://oooooooxxxxxxxxxxxxx?clash=1"
+    url: "此处粘贴机场订阅链接地址（clash订阅链接）"
     type: http
     interval: 86400
     health-check:
@@ -10,7 +10,7 @@ proxy-providers:
       interval: 300
     proxy: 直连
   Airport2:
-    url: "https://xxxxxxxxoooooooo?clash=1"
+    url: "此处粘贴机场订阅链接地址（clash订阅链接）"
     type: http
     interval: 86400
     health-check:

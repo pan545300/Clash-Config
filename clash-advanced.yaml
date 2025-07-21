@@ -1,3 +1,4 @@
+
 # 锚点区
 Proxy_first: &Proxy_first {type: select, proxies: [节点选择, 香港节点, 新加坡节点, 日本节点, 台湾节点, 韩国节点, 美国节点, 欧洲节点, 全部节点, 自建/家宽节点, 全球直连]}
 
@@ -15,25 +16,25 @@ proxy-providers:
   Airport_01:
     <<: *PProviders
     proxy: "🟢 直连"
-    url: "https://iooooQ?clash=1"
+    url: "此处粘贴机场订阅链接地址（clash订阅链接）"
     override:
-      additional-prefix: '[机场名称1]'
+      additional-prefix: '[机场名字]'
       skip-cert-verify: true
       udp: true
   Airport_02:
     <<: *PProviders
     proxy: "🟢 直连"
-    url: "https://xxxxx9rlF8xe3eTf1Fu?clash=1&extend=1"
+    url: "此处粘贴机场订阅链接地址（clash订阅链接）"
     override:
-      additional-prefix: '[机场名称2]'
+      additional-prefix: '[机场名字]'
       skip-cert-verify: true
       udp: true
   Airport_03:
     <<: *PProviders
     proxy: "🔗 代理"
-    url: "https://xxxxooovg?clash=1"
+    url: "此处粘贴机场订阅链接地址（clash订阅链接）"
     override:
-      additional-prefix: '[机场名称3]'
+      additional-prefix: '[机场名字]'
       skip-cert-verify: true
       udp: true
 
@@ -186,7 +187,7 @@ proxy-groups:
   - {name: Primevideo, <<: *Proxy_first, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/primevideo.png"}
   - {name: AppleTV, <<: *Proxy_first, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/appletv.png"}
   - {name: Apple, type: select, <<: *Direct_first, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/apple.png"}
-  - {name: Emby,type: select, <<: *Include_all, include-all: true, icon: https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/emby.png}
+  - {name: Emby,type: select, <<: *Proxy_first, icon: https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/emby.png}
   - {name: 哔哩哔哩, type: select, <<: *Direct_first, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/bilibili.png"}
   - {name: 哔哩东南亚, type: select, proxies: [节点选择, 新加坡节点, 全部节点, 自建/家宽节点, 全球直连], icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/bilibilit.png"}
   - {name: 巴哈姆特, type: select, proxies: [台湾节点], icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/bahamut.png"}
@@ -196,9 +197,9 @@ proxy-groups:
   - {name: Global-Medial,type: select, <<: *Include_all, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/global_media.png"}
   - {name: 游戏平台, <<: *Proxy_first, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/game.png"}
   - {name: Speedtest,type: select, <<: *Include_all, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/speedtest.png"}
-  - {name: PayPal, <<: *Proxy_first, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/paypal.png"}
-  - {name: Wise, <<: *Proxy_first, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/wise.png"}
-  - {name: 国外电商, <<: *Proxy_first, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/shopping.png"}
+  - {name: PayPal, <<: *Include_all, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/paypal.png"}
+  - {name: Wise, <<: *Include_all, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/wise.png"}
+  - {name: 国外电商, <<: *Include_all, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/shopping.png"}
   - {name: STEAM,type: select, <<: *Include_all, icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/steam.png"}
   - {name: 全球直连, type: select, proxies: [🟢 直连, 🔗 代理], icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/direct.png"}
   - {name: 隐私拦截, type: select, proxies: [🚫 拒绝, ⚪ 丢弃 ,🟢 直连, 🔗 代理], icon: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/icon/block.png"}
@@ -335,7 +336,7 @@ rule-anchor:
   class_yaml: &class_yaml {type: http, interval: 86400, behavior: classical, format: yaml}
 rule-providers: 
   banAd_domain: { <<: *domain, url: "https://raw.githubusercontent.com/Lanlan13-14/Rules/refs/heads/main/rules/Domain/banAd.mrs" }
-  proxylite: { <<: *class, url: "https://raw.githubusercontent.com/ifanrBook/ClashConfig/refs/heads/main/list/proxy.list"}
+  proxylite: { <<: *class, url: "https://raw.githubusercontent.com/ifanrBook/ClashConfig/refs/heads/main/proxy.list"}
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs" }
   bank_cn_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/category-bank-cn.mrs" }
   xiaomi_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/refs/heads/meta/geo/geosite/xiaomi.mrs" }

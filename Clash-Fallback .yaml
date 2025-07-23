@@ -7,7 +7,7 @@
 proxy-providers:
 
   翻儿cloud:
-    url: "https://ifaner.dd94wan.com/link/hrp7qB5VvPNdbPlt?clash=1"
+    url: "此处粘贴机场订阅链接地址"
     type: http
     interval: 86400
     health-check:
@@ -17,7 +17,7 @@ proxy-providers:
     proxy: 直连 
     
   妖月:
-    url: "https://subscribe.ifanrwall.net/link/8QKZV5BDhR8M4d3V?clash=1"
+    url: "此处粘贴机场订阅链接地址"
     type: http
     interval: 86400
     health-check:
@@ -27,7 +27,7 @@ proxy-providers:
     proxy: 所有-自动    
 
   猫熊:
-    url: "https://sub.maoxiongnet.com/sub?target=clash&udp=true&filename=maoxiong&interval=86400&append_info&url=https://gbshct.spphhnhg.top/link/cM9rlF8xe3eTf1Fu?clash=1&extend=1"
+    url: "此处粘贴机场订阅链接地址"
     type: http
     interval: 86400
     health-check:
@@ -37,7 +37,7 @@ proxy-providers:
     proxy: 直连    
 
   飘渺:
-    url: "http://103.186.108.143:13884/s/8b1c90c3116e6ff304b593fb6c1a50ec"
+    url: "此处粘贴机场订阅链接地址"
     type: http
     interval: 86400
     health-check:
